@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="link-box">
+            <ul class="link-list">
+                <li class="link"><a type="button" href="/src/pages/home/index.html">Início</a></li>
+                <li class="link"><a type="button" href="/src/pages/about/index.html">Sobre</a></li>
+                <li class="link"><a type="button" href="/src/pages/register/index.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+<style>
+    :root {
+        --default-color-1: #1A222F;
+        --default-color-2: #008E74;
+        --default-color-3: #B2E097;
+        --default-color-4: #D24335;
+        --default-color-5: #1C3A40;
+
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background: var(--default-color-1);
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .link-box {
+        flex: 1;
+        /* Makes it stretch to take up space */
+    }
+
+    .link-list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .link {
+        margin-right: 20px;
+    }
+
+    .link a {
+        position: relative;
+        text-decoration: none;
+        color: var(--default-color-3);
+        font-size: 20px;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    .link a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: var(--default-color-2);
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .link a:hover {
+        color: var(--default-color-2);
+    }
+
+    .link a:hover::after {
+        width: 100%;
+        left: 0;
+    }
+</style>
+
+</html>
