@@ -1,11 +1,13 @@
-import { about } from '../pages/about/index.html';
 import { home } from '../pages/home/index.html';
-import { register } from '../pages/register/index.html';
+import { inventory } from '../pages/inventory/index.html';
+import { login } from '../pages/login/index.html';
+import { addProduct } from '../pages/add-product/index.html';
 
 const pages = {
-    '/about': about,
     '/home': home,
-    '/register': register,
+    '/inventory': inventory,
+    '/login': login,
+    '/add-product': addProduct,
 };
 
 export default pages;

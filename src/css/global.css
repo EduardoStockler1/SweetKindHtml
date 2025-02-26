@@ -1,12 +1,12 @@
 /* Root Variables for Colors and Fonts */
 :root {
-    --primary-color: #1A222F; /* Dark background */
-    --secondary-color: #008E74; /* Accent green */
-    --light-color: #B2E097; /* Light green */
-    --danger-color: #D24335; /* Red accent */
-    --dark-teal: #1C3A40; /* Dark teal */
-    --text-color: #333; /* Default text color */
-    --bg-light: #f5f5f5; /* Light background */
+    --primary-color: #1A222F;
+    --secondary-color: #008E74;
+    --light-color: #B2E097; 
+    --danger-color: #D24335;
+    --dark-teal: #1C3A40; 
+    --text-color: #333; 
+    --bg-light: #f5f5f5;
     
     --font-family: Helvetica, Arial, sans-serif;
     --transition-speed: 0.3s ease-in-out;
